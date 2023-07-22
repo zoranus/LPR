@@ -74,7 +74,7 @@ def fastAlgorithm(amount, points, data_name):
     plt.show()
 
 
-if __name__ == "__main__":
+def main():
     # get titles of files from directory with datasets
     path = "computer_vision_data"
     titles = os.listdir(path)[1:]
@@ -85,3 +85,9 @@ if __name__ == "__main__":
         # sort points
         newArr = iSort(length, newArr)
         fastAlgorithm(length, newArr, title)
+    return
+
+
+if __name__ == "__main__":
+    main()
+    
